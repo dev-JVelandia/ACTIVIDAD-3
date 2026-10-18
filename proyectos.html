@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos de clase · Juan Diego Velandia Guerrero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
+<body class="pagina pagina--proyectos">
+
+  
+  <header class="cabecera cabecera--sin-foto">
+    <div class="cabecera__texto">
+      <p class="cabecera__titulo">Juan Diego Velandia Guerrero</p>
+      <p class="cabecera__cargo">Desarrollador Junior en formación</p>
+    </div>
+  </header>
+
+  
+  <nav class="menu">
+    <ul class="menu__lista">
+      <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+      <li><a class="menu__enlace" href="proyectos.html">Proyectos</a></li>
+      <li><a class="menu__enlace" href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="bloque intro">
+    <h1 class="bloque__titulo bloque__titulo--principal">Proyectos de clase</h1>
+    <p>Estos son tres trabajos que hice en clase mientras estudio desarrollo de software. Cada uno explica qué hace y tiene el enlace a su repositorio en GitHub.</p>
+  </section>
+
+  
+  <section class="proyectos">
+
+    <article class="bloque proyecto">
+      <h2 class="bloque__titulo">Generador de Horarios para Estudiantes</h2>
+      <p>Aplicación de consola en Python para organizar el horario semanal de un estudiante: materias y actividades con su día, hora y ubicación.</p>
+      <ul class="proyecto__lista">
+        <li>Registrar, modificar y eliminar materias o actividades.</li>
+        <li>Mostrar el calendario semanal como una tabla por día y hora.</li>
+        <li>Validar el nombre, el día, el formato de las horas y los cruces de horario.</li>
+        <li>Guardar los datos en un archivo JSON.</li>
+      </ul>
+      <p class="proyecto__tecnologias">Python · JSON</p>
+      
+      <a class="proyecto__enlace" href="https://github.com/tu-usuario/horarios-v1" target="_blank" rel="noopener">Ver repositorio</a>
+    </article>
+
+    <article class="bloque proyecto">
+      <h2 class="bloque__titulo">Generador de Horarios, versión con reporte</h2>
+      <p>Segunda versión del generador de horarios, con más validaciones y un reporte semanal guardado en un archivo.</p>
+      <ul class="proyecto__lista">
+        <li>Las mismas opciones de registrar, modificar, eliminar y mostrar.</li>
+        <li>Validación de la ubicación, además de las del nombre, día y horas.</li>
+        <li>Reporte agrupado por día, guardado en <code>reporte_horario.json</code>.</li>
+      </ul>
+      <p class="proyecto__tecnologias">Python · JSON</p>
+      
+      <a class="proyecto__enlace" href="https://github.com/tu-usuario/horarios-v2" target="_blank" rel="noopener">Ver repositorio</a>
+    </article>
+
+    <article class="bloque proyecto">
+      <h2 class="bloque__titulo">Piñatería Fiesta Viva</h2>
+      <p>Sitio web de un negocio local inventado: una piñatería de barrio que quiere mostrar sus productos, horarios y ubicación, y recibir pedidos desde el celular.</p>
+      <ul class="proyecto__lista">
+        <li>Dos páginas: inicio y precios con formulario de pedidos.</li>
+        <li>HTML semántico, tabla de precios y tarjetas de productos.</li>
+        <li>CSS con variables, especificidad documentada y diseño que se adapta a 360 px.</li>
+      </ul>
+      <p class="proyecto__tecnologias">HTML · CSS</p>
+      
+      <a class="proyecto__enlace" href="https://github.com/tu-usuario/pinateria" target="_blank" rel="noopener">Ver repositorio</a>
+    </article>
+
+  </section>
+
+
+  <footer class="bloque contacto">
+    <h2 class="bloque__titulo">Contacto</h2>
+    <ul class="contacto__lista">
+      
+      <li><a href="mailto:juanvelandiaguerrero@gmail.com">Correo electrónico</a></li>
+      
+      <li><a href="https://github.com/dev-JVelandia" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/juan-diego-velandia-guerrero-103783424/?isSelfProfile=true" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
