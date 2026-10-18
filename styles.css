@@ -1,14 +1,13 @@
-/* Colores del sitio (variables) */
+
 :root {
   --azul-oscuro: #24427a;
   --azul-claro: #3f74ad;
   --texto: #1d2733;
   --gris: #5b6675;
   --fondo: #e9edf3;
-  --linea: #d5dbe5;
 }
 
-/* R2: estilos base pensados para celular */
+
 *,
 *::before,
 *::after {
@@ -23,20 +22,21 @@ body {
   background: var(--fondo);
 }
 
-/* R4 y R6: grid por áreas, ancho máximo y centrado */
+
 .pagina {
   display: grid;
+  grid-template-columns: 5rem 1fr;
   grid-template-areas:
-    "cabecera"
-    "menu"
-    "perfil"
-    "formacion"
-    "habilidades"
-    "competencias"
-    "contacto";
+    "cabecera cabecera"
+    "menu perfil"
+    "menu formacion"
+    "menu habilidades"
+    "menu competencias"
+    "menu contacto";
+  gap: 0.5rem;
   max-width: 64rem;
   margin: 0 auto;
-  background: #fff;
+  background: var(--fondo);
 }
 
 .cabecera     { grid-area: cabecera; }
@@ -47,7 +47,7 @@ body {
 .competencias { grid-area: competencias; }
 .contacto     { grid-area: contacto; }
 
-/* Cabecera: foto a la izquierda, texto centrado */
+
 .cabecera {
   position: relative;
   overflow: hidden;
@@ -56,7 +56,7 @@ body {
   color: #fff;
 }
 
-/* R7: imagen que no se desborda */
+
 .cabecera__imagen {
   flex-shrink: 0;
   width: 6rem;
@@ -86,7 +86,7 @@ body {
   font-weight: 600;
 }
 
-/* Triángulo decorativo de la esquina */
+
 .cabecera::after {
   content: "";
   position: absolute;
@@ -98,25 +98,32 @@ body {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
 
-/* Menú */
+
 .menu {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  height: 100dvh;
   background: var(--azul-claro);
 }
 
 .menu__lista {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
   margin: 0;
-  padding: 0.6rem 1rem;
+  padding: 1rem 0.25rem;
   list-style: none;
 }
 
 .menu__enlace {
-  padding: 0.25rem 0.5rem;
+  display: block;
+  padding: 0.4rem 0.25rem;
   color: #fff;
+  font-size: 0.7rem;
   font-weight: 600;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -125,18 +132,21 @@ body {
   text-decoration: underline;
 }
 
-/* Bloques de contenido */
+
 .bloque {
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--linea);
+  padding: 1.25rem 1rem;
+  background: #fff;
+  border-left: 0.3rem solid var(--azul-claro);
 }
 
 .bloque__titulo {
   margin: 0 0 0.75rem;
-  font-size: 1rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
+  border-bottom: 2px solid var(--azul-claro);
 }
 
 .bloque p {
@@ -144,7 +154,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Estudios */
+
 .estudio {
   display: flex;
   flex-wrap: wrap;
@@ -168,10 +178,10 @@ body {
   flex-basis: 100%;
 }
 
-/* R5: tarjetas automáticas */
+
 .tarjetas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
   gap: 0.6rem;
   margin: 0 0 1rem;
   padding: 0;
@@ -186,7 +196,7 @@ body {
   border-radius: 0.25rem;
 }
 
-/* Contacto */
+
 .contacto__lista {
   display: flex;
   flex-wrap: wrap;
@@ -201,17 +211,20 @@ body {
   font-weight: 600;
 }
 
-/* R3: media queries al final, de menor a mayor */
+
 @media (min-width: 600px) {
   .pagina {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 6rem 1fr 1fr;
     grid-template-areas:
-      "cabecera cabecera"
-      "menu menu"
-      "perfil perfil"
-      "formacion formacion"
-      "habilidades competencias"
-      "contacto contacto";
+      "cabecera cabecera cabecera"
+      "menu perfil perfil"
+      "menu formacion formacion"
+      "menu habilidades competencias"
+      "menu contacto contacto";
+  }
+
+  .menu__enlace {
+    font-size: 0.8rem;
   }
 
   .cabecera__imagen {
@@ -237,6 +250,27 @@ body {
       "perfil habilidades"
       "formacion competencias"
       "contacto contacto";
+  }
+
+  
+  .menu {
+    position: static;
+    align-self: stretch;
+    height: auto;
+    margin-top: -0.5rem;
+  }
+
+  .menu__lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .menu__enlace {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
   }
 
   .cabecera__imagen {
