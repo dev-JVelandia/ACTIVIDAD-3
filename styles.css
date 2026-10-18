@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.cabecera{
+    background-color: #2b5278;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 30px 50px;
+    color: #ffffff;
+}
+.cabecera__imagen{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
+}
+.cabecera__info{
+    display: flex;
+    flex-direction: column;
+}
+.info__nombre{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+.info__cargo{
+    font-size: 1.1rem;
+    margin: 0;
+    color: #d0e1fd;
+}
