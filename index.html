@@ -1,19 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida | Inicio</title>
-    <meta name="description" content="hoja de vida con descripcion profesional sobre mi perfil y contacto">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de vida · Juan Diego Velandia Guerrero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="cabecera">
-        <img class="cabecera__imagen" src="/Imagenes/Foto_mia.png">
-        <div class="cabecera info">
-            <h1 class="info__nombre">Juan Diego Velandia Guerrero</h1>
-            <p class="info__cargo">Desarrollador Junio En Formación</p>
-        </div>
-    </header>   
+<body class="pagina">
+
+  <header class="cabecera">
+    
+    <img class="cabecera__imagen" src="/Imagenes/Foto_mia.png">
+    <div class="cabecera__texto">
+      <h1 class="cabecera__titulo">Juan Diego Velandia Guerrero</h1>
+      <p class="cabecera__cargo">Desarrollador Junior en formación</p>
+    </div>
+  </header>
+
+ 
+  <nav class="menu">
+    <ul class="menu__lista">
+      <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+      <li><a class="menu__enlace" href="proyectos.html">Proyectos</a></li>
+      <li><a class="menu__enlace" href="piñateria 2.0.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="bloque perfil">
+    <h2 class="bloque__titulo">Perfil</h2>
+    <p>Estudiante con conocimientos en desarrollo de software utilizando Python y en la aplicación de la metodología ágil Scrum. Cuenta con habilidades para el análisis y resolución de problemas, trabajo colaborativo y desarrollo de soluciones orientadas al cumplimiento de objetivos. Presenta interés en fortalecer continuamente sus conocimientos en programación y tecnologías de desarrollo de software.</p>
+  </section>
+
+  <section class="bloque formacion">
+    <h2 class="bloque__titulo">Formación</h2>
+    <article class="estudio">
+      <h3 class="estudio__titulo">Técnico Laboral en desarrollo de Software</h3>
+      <p class="estudio__fecha">Actualidad</p>
+      <p class="estudio__lugar">Campuslands, Floridablanca</p>
+    </article>
+    <article class="estudio">
+      <h3 class="estudio__titulo">Tercer semestre en Tecnología en Sistemas Informáticos</h3>
+      <p class="estudio__fecha">En pausa</p>
+      <p class="estudio__lugar">Unidades Tecnológicas de Santander</p>
+    </article>
+    <article class="estudio">
+      <h3 class="estudio__titulo">Bachiller Técnico en Sistemas</h3>
+      <p class="estudio__fecha">2023</p>
+      <p class="estudio__lugar">Colegio Técnico Vicente Azuero Sede D</p>
+    </article>
+    <article class="estudio">
+      <h3 class="estudio__titulo">Python (curso)</h3>
+      <p class="estudio__fecha">2023</p>
+      <p class="estudio__lugar">Universidad Santo Tomás</p>
+    </article>
+  </section>
+
+  <section class="bloque habilidades">
+    <h2 class="bloque__titulo">Habilidades</h2>
+    <!-- R5: tarjetas automáticas -->
+    <ul class="tarjetas">
+      <li class="tarjeta">Python</li>
+      <li class="tarjeta">Metodología Ágil Scrum</li>
+      <li class="tarjeta">Desarrollo de software</li>
+    </ul>
+  </section>
+
+  <section class="bloque competencias">
+    <h2 class="bloque__titulo">Competencias</h2>
+    <ul class="tarjetas">
+      <li class="tarjeta">Empatía</li>
+      <li class="tarjeta">Perseverancia</li>
+      <li class="tarjeta">Proactividad</li>
+      <li class="tarjeta">Comunicación asertiva</li>
+      <li class="tarjeta">Adaptabilidad</li>
+    </ul>
+    <h2 class="bloque__titulo">Idiomas</h2>
+    <p>Inglés · A2.3</p>
+  </section>
+
+  <footer class="bloque contacto">
+    <h2 class="bloque__titulo">Contacto</h2>
+    <ul class="contacto__lista">
+      <!-- Cambia estos datos por los tuyos (solo correo, sin teléfono) -->
+      <li><a href="mailto:tu-correo@ejemplo.com">Correo electrónico</a></li>
+      <!-- R10: externos en otra pestaña -->
+      <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
