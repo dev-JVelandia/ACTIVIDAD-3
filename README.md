@@ -2,7 +2,7 @@
 
 Sitio personal responsive con mi hoja de vida, mis proyectos de clase y una versión mejorada del sitio de una piñatería. Está hecho con HTML y CSS (Grid, Mobile First y media queries) y publicado con GitHub Pages.
 
-**Sitio publicado:** [https://github.com/dev-JVelandia/ACTIVIDAD-3.git](https://dev-jvelandia.github.io/hoja-de-vida/)
+**Sitio publicado:** [https://github.com/dev-JVelandia/ACTIVIDAD-3.git](https://github.com/dev-JVelandia/ACTIVIDAD-3.git)
 
 
 ## Páginas
@@ -37,9 +37,9 @@ Cada página tiene un mockup para celular y otro para computador, con las áreas
 
 Capturas del sitio ya publicado, en dos dispositivos:
 
-![Celular](capturas/celular.png)
-![Computador](capturas/computador.png)
-
+![Celular](/Capturas/celular.png)
+![Computador](/Capturas/escritorio.png)
+[link para la pagina](capturas/computador.png)
 
 
 ## Breakpoints
