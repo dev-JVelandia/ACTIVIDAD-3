@@ -65,14 +65,14 @@ El CSS de la hoja de vida y de proyectos (`styles.css`) está hecho **Mobile Fir
 
 ## Cómo lo publiqué
 
-> **Completa con tus palabras.** La actividad pide un resumen de lo que hiciste, no una copia de un tutorial. Responde brevemente cada punto:
+
 
 1. Cómo creé el repositorio público: Lo primero que hice fue buscar maneras de publicar las paginas y encontre la   
    pagina  Vercel.
 2. Cómo subí mis archivos (desde la web de GitHub o con Git):solo vinvule mi cuenta de github a la pagina vercel y subi la carpeta donde estan los archivos de la actividad
 3. Dónde activé GitHub Pages y qué rama y carpeta elegí: no use esta opcion
 4. Cuánto tardó en aparecer el sitio: poco tiempo la verdad
-5. Por qué la página principal debe llamarse `index.html`: 
+5. Por qué la página principal debe llamarse `index.html`: esto es para que a la hora de subirlo se detecte de manera automatica como el principal o el padre.
 6. Qué errores encontré al publicar y cómo los arreglé: Bastantes errores con las imagenes y actualizaciones en el codigo y se solucionaron organizando bien las carpetas y subiendo cada modificacion a github
 
 ## Fuentes consultadas
