@@ -101,7 +101,7 @@ a[target="_blank"]::after {
   border-radius: var(--radio);
   background:
     linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
-    url("/Imagenes/fondo.jpg") center / cover no-repeat;
+    url("imagenes/fondo.jpg") center / cover no-repeat;
   animation: aparecer 1s ease-out;
 }
 
